@@ -1,6 +1,8 @@
 package testScenarios;
 
 import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import pageObjects.CancelTicket;
 import pageObjects.Home;
@@ -10,9 +12,9 @@ import pageObjects.TrackService;
 
 public class TestCases  // child class
 {
-	
-	Login login = new Login(); // parent class
-	Home home = new Home();
+	WebDriver driver = new ChromeDriver(); //1234
+	Login login = new Login(driver);//1234 // parent class
+	Home home = new Home(driver);//1234
 	CancelTicket cancelTicket = new CancelTicket();
 	TicketStatus ticketStatus = new TicketStatus();
 	TrackService trackService = new TrackService();
