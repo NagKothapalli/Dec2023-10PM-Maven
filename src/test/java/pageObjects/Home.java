@@ -12,5 +12,10 @@ public class Home
 	{
 		System.out.println("RC : Print Bus Ticket");
 	}
+	
+	public void editTicket()
+	{
+		System.out.println("RC : Edit Ticket");
+	}
 
 }
