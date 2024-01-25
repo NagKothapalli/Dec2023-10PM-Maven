@@ -25,7 +25,9 @@ public class TestCases  // child class
 		//launch , login , bookTicket , printTicket , logout , close
 		login.launchApplication();
 		login.loginToApplication();
-		home.bookTickt();
+		//home.bookTickt();
+		//home.bookTickt_xpath();
+		home.bookTickt_factory();
 		home.printTicket();
 		login.logoutFromApplication();
 		login.closeApplication();
