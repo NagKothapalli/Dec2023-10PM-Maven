@@ -41,6 +41,17 @@ public class Home  // page object
 	String jDate = "//a[text()='29']";
 	String searchButton = "//input[@name='searchBtn']";
 	
+	public void bookTicket_util()
+	{
+		System.out.println("RC : Book Bus Ticket");
+		au.returnElement(source).sendKeys(rp.readData("FromCity"));	
+		au.waitAndClickEnter();
+		au.returnElement(destination,25).sendKeys(rp.readData("ToCity"));
+		au.waitAndClickEnter();
+		au.returnElement(openCalendar).click();
+		au.returnElement(jDate).click();
+		au.returnElement(searchButton).click();
+	}
 	
 	public void bookTickt_factory()
 	{
@@ -56,7 +67,7 @@ public class Home  // page object
 		searchButtonObj.click();
 	}
 	
-	public void bookTickt_xpath()
+	public void bookTickt_stringxpath()
 	{
 		System.out.println("RC : Book Bus Ticket");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));

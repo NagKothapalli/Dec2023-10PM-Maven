@@ -1,8 +1,9 @@
 package testScenarios;
 
-import org.junit.Test;
+//import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import pageObjects.CancelTicket;
 import pageObjects.Home;
@@ -27,7 +28,8 @@ public class TestCases  // child class
 		login.loginToApplication();
 		//home.bookTickt();
 		//home.bookTickt_xpath();
-		home.bookTickt_factory();
+		//home.bookTickt_factory();
+		home.bookTicket_util();
 		home.printTicket();
 		login.logoutFromApplication();
 		login.closeApplication();
