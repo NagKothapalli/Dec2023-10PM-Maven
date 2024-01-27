@@ -1,17 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-26T17:15:00Z" name="Default suite" finished-at="2024-01-26T17:15:12Z" duration-ms="11368">
+  <suite started-at="2024-01-27T17:15:52Z" name="Default suite" finished-at="2024-01-27T17:15:52Z" duration-ms="158">
     <groups>
     </groups>
-    <test started-at="2024-01-26T17:15:00Z" name="Default test" finished-at="2024-01-26T17:15:12Z" duration-ms="11368">
-      <class name="testScenarios.TestCases">
-        <test-method signature="bookTicketAndPrint()[pri:0, instance:testScenarios.TestCases@1e8823d2]" started-at="2024-01-26T17:15:00Z" name="bookTicketAndPrint" finished-at="2024-01-26T17:15:12Z" duration-ms="11221" status="PASS">
+    <test started-at="2024-01-27T17:15:52Z" name="Default test" finished-at="2024-01-27T17:15:52Z" duration-ms="158">
+      <class name="practiceTestNG.TestNGPractice">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:practiceTestNG.TestNGPractice@352c1b98]" started-at="2024-01-27T17:15:52Z" name="launchApplication" finished-at="2024-01-27T17:15:52Z" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookTicketAndPrint -->
-      </class> <!-- testScenarios.TestCases -->
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="loginApplication()[pri:0, instance:practiceTestNG.TestNGPractice@352c1b98]" started-at="2024-01-27T17:15:52Z" name="loginApplication" finished-at="2024-01-27T17:15:52Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method signature="sendMail()[pri:0, instance:practiceTestNG.TestNGPractice@352c1b98]" started-at="2024-01-27T17:15:52Z" name="sendMail" finished-at="2024-01-27T17:15:52Z" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMail -->
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:practiceTestNG.TestNGPractice@352c1b98]" started-at="2024-01-27T17:15:52Z" name="logoutApplication" finished-at="2024-01-27T17:15:52Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutApplication -->
+        <test-method is-config="true" signature="loginApplication()[pri:0, instance:practiceTestNG.TestNGPractice@352c1b98]" started-at="2024-01-27T17:15:52Z" name="loginApplication" finished-at="2024-01-27T17:15:52Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method signature="replyMail()[pri:0, instance:practiceTestNG.TestNGPractice@352c1b98]" started-at="2024-01-27T17:15:52Z" name="replyMail" finished-at="2024-01-27T17:15:52Z" depends-on-methods="practiceTestNG.TestNGPractice.sendMail" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- replyMail -->
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:practiceTestNG.TestNGPractice@352c1b98]" started-at="2024-01-27T17:15:52Z" name="logoutApplication" finished-at="2024-01-27T17:15:52Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutApplication -->
+        <test-method is-config="true" signature="loginApplication()[pri:0, instance:practiceTestNG.TestNGPractice@352c1b98]" started-at="2024-01-27T17:15:52Z" name="loginApplication" finished-at="2024-01-27T17:15:52Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method signature="deleteMail()[pri:0, instance:practiceTestNG.TestNGPractice@352c1b98]" started-at="2024-01-27T17:15:52Z" name="deleteMail" finished-at="2024-01-27T17:15:52Z" depends-on-methods="practiceTestNG.TestNGPractice.replyMail, practiceTestNG.TestNGPractice.sendMail" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteMail -->
+        <test-method is-config="true" signature="logoutApplication()[pri:0, instance:practiceTestNG.TestNGPractice@352c1b98]" started-at="2024-01-27T17:15:52Z" name="logoutApplication" finished-at="2024-01-27T17:15:52Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutApplication -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:practiceTestNG.TestNGPractice@352c1b98]" started-at="2024-01-27T17:15:52Z" name="closeApplication" finished-at="2024-01-27T17:15:52Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- practiceTestNG.TestNGPractice -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
